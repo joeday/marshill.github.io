@@ -12,7 +12,9 @@ l = File.read("views/layout.slim")
 layout = Slim::Template.new { l }
 
 files = Dir['views/*']
-files.reject! { |f| f.match(/layout/) }
+files.reject! { |f| f.gsub('views/', '').match(/^(layout|_)/) }
+
+puts files.inspect
 
 files.each do |file|
   dir = File.basename(file, '.*')
