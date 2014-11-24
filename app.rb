@@ -7,7 +7,7 @@ get '/' do
 end
 
 get '/:file' do
-  if File.exist?("#{params[:file]}.slim")
+  if File.exist?("views/#{params[:file]}.slim")
     slim params[:file].to_sym
   else
     send_file params[:file]
