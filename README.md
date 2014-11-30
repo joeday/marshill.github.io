@@ -14,7 +14,7 @@ Go to [http://localhost:9393](http://localhost:9393).
 
 URLs like `/foo` will look for a slim file named `views/foo.slim`. If that file
 doesn't exist, it will just look for the file `/foo`. So when you are referring
-to CSS or JavaScript files, use the full path (relative to here) including the
+to CSS or JavaScript files, use the full path (relative to the project root) including the
 extension.
 
 ## Deployment
