@@ -3,6 +3,7 @@
 # Just run this with `ruby generate_static.rb`. It will convert the slim to html.
 
 require 'slim'
+#require 'uglifier'
 
 def replace_slim_call(string)
   string.gsub(/^( *={1,2} )slim :(.*)/, '\1 (f = File.read("views/\2.slim"); Slim::Template.new { f }.render)')
@@ -52,5 +53,9 @@ files.each do |file|
 
   File.write(file_name, html)
 end
+
+# public files
+# Uglifier.new(mangle: {toplevel: true}).compile(File.read('public/file.js'))
+
 
 puts "Done."

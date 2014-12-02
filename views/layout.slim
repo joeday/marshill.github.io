@@ -4,9 +4,11 @@ html
   head
     title Mars Hill
     script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"
+    script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"
     link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"
+    link rel="stylesheet" href="style.css"
 
     == slim :_favicons
 
-  body
+  body data-spy="scroll" data-target=".navbar"
     == yield
