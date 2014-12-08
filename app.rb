@@ -15,7 +15,7 @@ Slim::Engine.default_options[:pretty] = true
 
     css :application, %w(
       //maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css
-      /css/style.css
+      /css/application.css
     )
 
     css_compression :sass
