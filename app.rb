@@ -1,17 +1,34 @@
 
 require 'sinatra'
+require 'sinatra/assetpack'
 require 'slim'
+require 'sass'
 
 Slim::Engine.default_options[:pretty] = true
 
-get '/' do
-  slim :index
-end
+  register Sinatra::AssetPack
+  assets do
+    js :application, %w(
+      //cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js
+      //maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js
+    )
 
-get '/:file' do
-  if File.exist?("views/#{params[:file]}.slim")
-    slim params[:file].to_sym
-  else
-    send_file params[:file]
+    css :application, %w(
+      //maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css
+      /css/style.css
+    )
+
+    css_compression :sass
   end
-end
+
+  get '/' do
+    slim :index
+  end
+
+  get '/:file' do
+    if File.exist?("views/#{params[:file]}.slim")
+      slim params[:file].to_sym
+    else
+      send_file params[:file]
+    end
+  end
