@@ -5,7 +5,7 @@ marshill.github.io
 
 Run these commands:
 
-    gem install shotgun
+    gem install shotgun slim
     shotgun app.rb
 
 Go to [http://localhost:9393](http://localhost:9393).
