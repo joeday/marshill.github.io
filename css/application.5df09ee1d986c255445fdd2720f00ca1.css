@@ -1,0 +1,68 @@
+/* #ae956b; PANTONE 871U */
+/* #a39161; ALTERNATE */
+body {
+  margin-top: 3.8em; }
+
+h1 {
+  font-size: 5em;
+  font-family: "futura-pt", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  color: #ae956b;
+  text-align: center; }
+
+h2 {
+  font-size: 5em;
+  font-family: "kepler-std", Georgia, "Times New Roman", Times, serif;
+  font-weight: normal;
+  color: #ae956b; }
+
+h3 {
+  font-size: 2em;
+  font-family: "futura-pt", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase; }
+
+p {
+  font-size: 1em;
+  font-family: serif;
+  color: #222222; }
+
+em {
+  font-style: italic;
+  font-family: serif; }
+
+hr {
+  color: #222222; }
+
+a {
+  text-decoration: none; }
+  a:hover {
+    text-decoration: none; }
+
+blockquote {
+  font-size: 2em;
+  font-family: "kepler-std", Georgia, "Times New Roman", Times, serif;
+  font-style: italic;
+  text-align: center;
+  border-top: 1px solid #222222;
+  border-bottom: 1px solid #222222;
+  border-left: 0;
+  padding: 1em 0;
+  color: #ae956b; }
+
+.gold {
+  color: #ae956b; }
+
+.black {
+  color: #222222; }
+
+.white {
+  color: #ffffff; }
+
+.hero {
+  background: #333333;
+  padding: 5em 0; }
+
+.content_bg {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 1em; }
