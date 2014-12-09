@@ -23,9 +23,7 @@ including the extension.
 
 Make sure the app is running on port 9393. Then, on `development` branch run:
 
-    wget -r localhost:9393
-    git checkout master
-    mv -f localhost\:9393/* .
-    rm -r localhost\:9393/
+    wget -r -nH localhost:9393
+    git checkout -f master
 
 Commit and push, and the site will be available at [marshill.github.io](http://marshill.github.io).
