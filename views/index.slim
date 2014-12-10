@@ -19,7 +19,9 @@ nav.navbar.navbar-default.navbar-fixed-top role="navigation"
 
   .row
     .col-sm-9.col-sm-offset-3
-      == img '/images/free_building.jpg'
+      noscript
+        == img '/images/free_building.jpg'
+      == img '/loader.gif', :"data-src" => '/images/free_building.jpg'
 
   .row.year#ad2001
     == slim :_2001
