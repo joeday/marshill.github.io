@@ -147,3 +147,47 @@ aside {
 .mt18 { margin-top: 18em; }
 .mt19 { margin-top: 19em; }
 .mt20 { margin-top: 20em; }
+
+
+
+
+#churches {
+
+  background: $mh_gold;
+  color: $mh_white;
+  padding: 3em 0;
+
+  p {
+    color: $mh_white;
+  }
+
+  a {
+    color: $mh_white;
+    & :hover {
+     color: $mh_white; 
+    }
+  }
+
+  h3 {
+    color: $mh_offblack;
+    margin-bottom: 1.6em;
+  }
+  
+  dt {
+    font-size: .6em;
+    font-weight: normal;
+  }
+  
+  dd {
+    padding-bottom: .7em;
+    border-bottom: 1px solid $mh_white;
+    margin-bottom: 1em;
+    font-family: $serif;
+    font-size: 1em;
+  }
+  
+  .last {
+    border-bottom: none;
+  }
+  
+}
