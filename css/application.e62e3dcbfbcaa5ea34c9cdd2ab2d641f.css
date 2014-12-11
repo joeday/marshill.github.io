@@ -1,0 +1,183 @@
+/* #ae956b; PANTONE 871U */
+/* #a39161; ALTERNATE */
+body {
+  margin-top: 3.8em;
+  font-size: 20px; }
+
+h1 {
+  font-size: 5em;
+  font-family: "futura-pt", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  color: #ae956b;
+  text-align: center; }
+
+h2 {
+  font-size: 8em;
+  font-family: "kepler-std", Georgia, "Times New Roman", Times, serif;
+  font-weight: normal;
+  color: #ae956b;
+  margin: 0; }
+
+h3 {
+  font-size: 1.6em;
+  font-family: "futura-pt", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase; }
+
+p {
+  font-size: 1em;
+  font-family: serif;
+  color: #222222; }
+
+em {
+  font-style: italic;
+  font-family: serif; }
+
+hr {
+  color: #222222; }
+
+a {
+  text-decoration: none; }
+  a:hover {
+    text-decoration: none; }
+
+blockquote {
+  font-size: 1.1em;
+  font-family: "kepler-std", Georgia, "Times New Roman", Times, serif;
+  font-style: italic;
+  text-align: center;
+  border-top: 1px solid #222222;
+  border-bottom: 1px solid #222222;
+  border-left: 0;
+  padding: 1em 0;
+  color: #ae956b;
+  margin-left: 3em;
+  margin-right: 3em;
+  line-height: 1.3em; }
+
+blockquote.white {
+  border-color: #ae956b; }
+
+.gold {
+  color: #ae956b; }
+
+.black {
+  color: #222222; }
+
+.white {
+  color: #ffffff; }
+
+.hero {
+  background: #333333;
+  background-image: url("/images/jesus_cross.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 5em 0; }
+
+.content_bg {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 1em; }
+
+.year {
+  padding-top: 2em;
+  margin-bottom: 4em; }
+
+.year#ad2003 {
+  background-image: url("/images/ballard.jpg");
+  background-size: cover; }
+
+.year#ad2013 {
+  background-image: url("/images/conference.jpg");
+  background-size: cover; }
+
+#churches {
+  background-color: #ae956b; }
+
+#all_about_jesus {
+  background-image: url("/images/worship.jpg");
+  background-size: cover; }
+
+.mt1 {
+  margin-top: 1em; }
+
+.mt2 {
+  margin-top: 2em; }
+
+.mt3 {
+  margin-top: 3em; }
+
+.mt4 {
+  margin-top: 4em; }
+
+.mt5 {
+  margin-top: 5em; }
+
+.mt6 {
+  margin-top: 6em; }
+
+.mt7 {
+  margin-top: 7em; }
+
+.mt8 {
+  margin-top: 8em; }
+
+.mt9 {
+  margin-top: 9em; }
+
+.mt10 {
+  margin-top: 10em; }
+
+.mt11 {
+  margin-top: 11em; }
+
+.mt12 {
+  margin-top: 12em; }
+
+.mt13 {
+  margin-top: 13em; }
+
+.mt14 {
+  margin-top: 14em; }
+
+.mt15 {
+  margin-top: 15em; }
+
+.mt16 {
+  margin-top: 16em; }
+
+.mt17 {
+  margin-top: 17em; }
+
+.mt18 {
+  margin-top: 18em; }
+
+.mt19 {
+  margin-top: 19em; }
+
+.mt20 {
+  margin-top: 20em; }
+
+#churches {
+  background: #ae956b;
+  color: #ffffff;
+  padding: 3em 0; }
+  #churches p {
+    color: #ffffff; }
+  #churches a {
+    color: #ffffff; }
+    #churches a :hover {
+      color: #ffffff; }
+  #churches h3 {
+    color: #333333;
+    margin-bottom: 1.6em; }
+  #churches dt {
+    font-size: .6em;
+    font-weight: normal; }
+  #churches dd {
+    padding-bottom: .7em;
+    border-bottom: 1px solid #ffffff;
+    margin-bottom: 1em;
+    font-family: "kepler-std", Georgia, "Times New Roman", Times, serif;
+    font-size: 1em; }
+  #churches .last {
+    border-bottom: none; }
