@@ -11,7 +11,7 @@ Slim::Engine.default_options[:pretty] = true
     js :application, %w(
       //cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js
       //maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js
-      //cdnjs.cloudflare.com/ajax/libs/unveil/1.3.0/jquery.unveil.min.js
+      //cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.min.js
       /js/application.js
     )
 

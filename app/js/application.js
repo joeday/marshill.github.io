@@ -1,3 +1,6 @@
-$(document).ready( function() {
-	$("img").unveil();
+$(function() {
+	$(".lazy").lazyload({
+		effect : 'fadeIn',
+		threshold : 200
+	});
 });

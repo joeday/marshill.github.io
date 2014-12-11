@@ -134,13 +134,8 @@ aside {
   margin-bottom: 4em;
 }
 
-.year#ad2003 {
-  background-image: url('/images/ballard.jpg');
-  background-size: cover;
-}
-
-.year#ad2013 {
-  background-image: url('/images/conference.jpg');
+.year.lazy {
+  background-image: url('/images/white.gif');
   background-size: cover;
 }
 
@@ -149,7 +144,7 @@ aside {
 }
 
 #all_about_jesus {
-  background-image: url('/images/worship.jpg');
+  background-image: url('/images/white.gif');
   background-size: cover;
 }
 
