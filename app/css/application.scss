@@ -86,6 +86,10 @@ blockquote {
   line-height: 1.3em;
 }
 
+blockquote.white {
+  border-color: $mh_gold;
+}
+
 
 aside {
   
@@ -114,6 +118,9 @@ aside {
 
 .hero {
   background: $mh_offblack;
+  background-image: url('/images/jesus_cross.jpg');
+  background-size: cover;
+  background-position: center;
   padding: 5em 0;
 }
 
@@ -125,6 +132,25 @@ aside {
 .year {
   padding-top: 2em;
   margin-bottom: 4em;
+}
+
+.year#ad2003 {
+  background-image: url('/images/ballard.jpg');
+  background-size: cover;
+}
+
+.year#ad2013 {
+  background-image: url('/images/conference.jpg');
+  background-size: cover;
+}
+
+#churches {
+  background-color: $mh_gold;
+}
+
+#all_about_jesus {
+  background-image: url('/images/worship.jpg');
+  background-size: cover;
 }
 
 .mt1 { margin-top: 1em; }
