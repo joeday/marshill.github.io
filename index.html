@@ -5,10 +5,7 @@
     <meta content="It&#39;s all about Jesus, and Mars Hill Church exists to make disciples and plant churches in his name." name="description" />
     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
     <link rel='stylesheet' href='//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css' />
-    <link rel='stylesheet' href='/css/application.e62e3dcbfbcaa5ea34c9cdd2ab2d641f.css' /><script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js'></script>
-    <script src='//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js'></script>
-    <script src='//cdnjs.cloudflare.com/ajax/libs/unveil/1.3.0/jquery.unveil.min.js'></script>
-    <script src='/js/application.7890119d5baeb783c1afda5b9795fb20.js'></script><link href="/favicons/favicon.ico" rel="shortcut icon" />
+    <link rel='stylesheet' href='/css/application.ed1c9fb0ef360342108d53cc7f52d1e1.css' /><link href="/favicons/favicon.ico" rel="shortcut icon" />
     <link href="/favicons/apple-touch-icon-57x57.png" rel="apple-touch-icon" sizes="57x57" />
     <link href="/favicons/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114" />
     <link href="/favicons/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72" />
@@ -28,7 +25,15 @@
     <meta content="/favicons/browserconfig.xml" name="msapplication-config" />
   </head>
   <body data-spy="scroll" data-target=".navbar">
-    <img src='/images/mh_logo.svg' /><nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header brand_layer">
+          <a class="navbar-brand" href="#"><img src='/images/mh_logo.svg' /></a>
+          <div class="church_link">
+            <a href="#churches"><span>Church <br />Directory</span><span aria-hidden="true" class="glyphicon glyphicon-download" href="#churches"></span></a>
+          </div>
+        </div>
+      </div>
       <div class="container">
         <div class="navbar-header">
           <ul class="years nav navbar-nav" role="tablist">
@@ -122,7 +127,7 @@
       </div>
       <div class="row">
         <div class="col-sm-9 col-sm-offset-3">
-          <noscript><img src='/images/free_building.jpg' /></noscript><img src='/loader.gif' data-src='/images/free_building.jpg' />
+          <img class="lazy" data-original="/images/free_building.jpg" height="666" width="1000" />
         </div>
       </div>
       <div class="row year" id="ad2001">
@@ -150,7 +155,7 @@
           <blockquote class="mt4">&ldquo;And so, yay, we got the free building that nobody else wanted, and that&rsquo;s when we started our very first Sunday morning services.&rdquo; &#8213; Pastor Mark Driscoll</blockquote>
         </div>
       </div>
-      <div class="row year" id="ad2003">
+      <div class="row year lazy" data-original="/images/ballard.jpg" id="ad2003">
         <div class="col-sm-3">
           <blockquote class="mt6">&ldquo;Jesus continued to grow his church&rdquo;</blockquote>
         </div>
@@ -251,8 +256,8 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-sm-9">
-          <img src='/images/driscoll_easter.jpg' />
+        <div class="col-sm-9 no_pad">
+          <img class="lazy" data-original="/images/driscoll_easter.jpg" height="683" width="1024" />
         </div>
       </div>
       <div class="row year" id="ad2011">
@@ -290,7 +295,7 @@
           </p>
         </div>
       </div>
-      <div class="row year" id="ad2013">
+      <div class="row year lazy" data-original="/images/conference.jpg" id="ad2013">
         <div class="col-sm-6 col-sm-offset-3">
           <div class="row content_bg">
             <div class="col-sm-12">
@@ -460,14 +465,17 @@
           </div>
         </div>
       </div>
-      <div class="row" id="all_about_jesus">
+      <div class="row lazy" data-original="/images/worship.jpg" id="all_about_jesus">
         <h1>
-          &ldquo;It&rsquo;s still all about Jesus!&rdquo;
+          &ldquo;It&rsquo;s still<br />all about<br>Jesus!&rdquo;</br>
         </h1>
       </div>
     </div>
     <p>
-      &copy; 2015 Mars Hill Church. All Rights Reverved
-    </p>
+      &copy; 2015 Mars Hill Church. All Rights Reserved.
+    </p><script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js'></script>
+    <script src='//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js'></script>
+    <script src='//cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.min.js'></script>
+    <script src='/js/application.e53a9cfb6c470ab972166499ab14083e.js'></script>
   </body>
 </html>

@@ -37,9 +37,11 @@ hr {
   color: #222222; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #ae956b; }
   a:hover {
-    text-decoration: none; }
+    text-decoration: none;
+    color: #ae956b; }
 
 blockquote {
   font-size: 1.1em;
@@ -66,36 +68,6 @@ blockquote.white {
 
 .white {
   color: #ffffff; }
-
-.hero {
-  background: #333333;
-  background-image: url("/images/jesus_cross.jpg");
-  background-size: cover;
-  background-position: center;
-  padding: 5em 0; }
-
-.content_bg {
-  background: rgba(255, 255, 255, 0.9);
-  padding: 1em; }
-
-.year {
-  padding-top: 2em;
-  margin-bottom: 4em; }
-
-.year#ad2003 {
-  background-image: url("/images/ballard.jpg");
-  background-size: cover; }
-
-.year#ad2013 {
-  background-image: url("/images/conference.jpg");
-  background-size: cover; }
-
-#churches {
-  background-color: #ae956b; }
-
-#all_about_jesus {
-  background-image: url("/images/worship.jpg");
-  background-size: cover; }
 
 .mt1 {
   margin-top: 1em; }
@@ -156,6 +128,64 @@ blockquote.white {
 
 .mt20 {
   margin-top: 20em; }
+
+.no_pad {
+  padding: 0; }
+
+.navbar-default {
+  background: rgba(255, 255, 255, 0.9);
+  border: none; }
+
+.brand_layer {
+  padding-top: 2em;
+  width: 100%; }
+
+.church_link {
+  float: right;
+  text-transform: uppercase;
+  text-align: right;
+  font-size: .5em;
+  padding: 15px; }
+  .church_link a, .church_link span {
+    display: inline-block; }
+  .church_link a {
+    text-align: left;
+    color: #222222; }
+    .church_link a :hover {
+      color: #ae956b; }
+  .church_link .glyphicon {
+    font-size: 2.6em;
+    margin-left: .5em;
+    color: #ae956b; }
+
+a.navbar-brand img {
+  height: 24px; }
+
+.hero {
+  background: #333333;
+  background-image: url("/images/jesus_cross.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 5em 0; }
+
+.content_bg {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 1em; }
+
+.year {
+  padding-top: 2em;
+  margin-bottom: 4em; }
+
+.year.lazy {
+  background-image: url("/images/white.gif");
+  background-size: cover; }
+
+#churches {
+  background-color: #ae956b; }
+
+#all_about_jesus {
+  background-image: url("/images/white.gif");
+  background-size: cover; }
 
 #churches {
   background: #ae956b;
