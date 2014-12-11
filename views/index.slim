@@ -1,5 +1,17 @@
 nav.navbar.navbar-default.navbar-fixed-top role="navigation"
   .container
+    .navbar-header.brand_layer
+      a.navbar-brand href="#"
+        == img '/images/mh_logo.svg'
+      div.church_link
+        a href="#churches"
+          span
+            | Church 
+            br
+            | Directory
+          span.glyphicon.glyphicon-download aria-hidden="true" href="#churches"
+          
+  .container
     .navbar-header
       ul.years.nav.navbar-nav role="tablist"
         - years = %w(1996 2000 2001 2003 2006 2009 2011 2012 2013 2014 2015)
@@ -36,7 +48,7 @@ nav.navbar.navbar-default.navbar-fixed-top role="navigation"
     == slim :_2009
 
   .row
-    .col-sm-9
+    .col-sm-9.no_pad
       == img '/images/driscoll_easter.jpg'
 
   .row.year#ad2011
