@@ -23,12 +23,7 @@ including the extension.
 
 Make sure the app is running on port 9393. Then, on `development` branch run:
 
-    wget -r -nH localhost:9393
-    git add --all
-    git stash
-    git checkout master
-    git rm -r *
-    git stash apply
+    bash make_static.sh
     
 You can test the static site with `python -m SimpleHTTPServer`. Go to [localhost:8000](http://localhost:8000)
 
