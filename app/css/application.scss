@@ -3,7 +3,7 @@
 ///             MIXINS            ///
 /////////////////////////////////////
 
-$sans:        "futura-pt", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$sans:        "futura", "futura-pt", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 $serif:       "kepler-std", Georgia, "Times New Roman", Times, serif !default;
 $mh_black: #222222;
 $mh_offblack: #333333;
@@ -22,7 +22,7 @@ $base_font_size: 20px;
 
 
 body {
-	margin-top: 3.8em;
+	padding-top: 7.4em;
   font-size: $base_font_size;
 }
 
@@ -189,17 +189,21 @@ a.navbar-brand {
   padding: 5em 0;
 }
 
-.content_bg {
+.hero_bg {
   background: rgba(255, 255, 255, .9);
   padding: 1em;
 }
 
+.year_bg {
+  
+}
+
 .year {
-  padding-top: 2em;
+  padding-top: 7.4em;
   margin-bottom: 4em;
 }
 
-.year.lazy {
+.lazy {
   background-image: url('/images/white.gif');
   background-size: cover;
 }

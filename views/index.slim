@@ -22,47 +22,58 @@ nav.navbar.navbar-default.navbar-fixed-top role="navigation"
 .container-fluid
   .row.hero
     == slim :_hero
+  
+  .year#ad1996
+    .row
+      == slim :_1996
 
-  .row.year#ad1996
-    == slim :_1996
-
-  .row.year#ad2000
-    == slim :_2000
+  .year#ad2000
+    .row
+      == slim :_2000
 
   .row
     .col-sm-9.col-sm-offset-3
-      img class='lazy' data-original='/images/free_building.jpg' width='1000' height='666'
+      img.lazy data-original='/images/free_building.jpg' width='1000' height='666'
 
-  .row.year#ad2001
-    == slim :_2001
+  .year#ad2001
+    .row
+      == slim :_2001
 
-  .row.year#ad2003.lazy data-original='/images/ballard.jpg'
-    == slim :_2003
+  .year#ad2003
+    .row.lazy data-original='/images/ballard.jpg'
+      == slim :_2003
 
-  .row.year#ad2006
-    == slim :_2006
+  .year#ad2006
+    .row
+      == slim :_2006
 
-  .row.year#ad2009
-    == slim :_2009
+  .year#ad2009
+    .row
+      == slim :_2009
 
   .row
     .col-sm-9.no_pad
       img class='lazy' data-original='/images/driscoll_easter.jpg' width='1024' height='683'
 
-  .row.year#ad2011
-    == slim :_2011
+  .year#ad2011
+    .row
+      == slim :_2011
 
-  .row.year#ad2012
-    == slim :_2012
+  .year#ad2012
+    .row
+      == slim :_2012
 
-  .row.year#ad2013.lazy data-original='/images/conference.jpg'
-    == slim :_2013
+  .year#ad2013
+    .row.lazy data-original='/images/conference.jpg'
+      == slim :_2013
 
-  .row.year#ad2014
-    == slim :_2014
+  .year#ad2014
+    .row
+      == slim :_2014
 
-  .row.year#ad2015
-    == slim :_2015
+  .year#ad2015
+    .row
+      == slim :_2015
 
   .row#churches
     == slim :_churches
