@@ -53,6 +53,7 @@ p {
   font-size: 1em;
   font-family: serif;
   color: $mh_black;
+  margin-bottom: 1.6em;
 }
 
 em {
@@ -92,6 +93,10 @@ blockquote.white {
   border-color: $mh_gold;
 }
 
+blockquote.inline {
+  margin: 2em 4em;
+  font-size: 1.6em;
+}
 
 aside {
   
@@ -134,6 +139,27 @@ aside {
 .mt18 { margin-top: 18em; }
 .mt19 { margin-top: 19em; }
 .mt20 { margin-top: 20em; }
+
+.mb1 { margin-bottom: 1em; }
+.mb2 { margin-bottom: 2em; }
+.mb3 { margin-bottom: 3em; }
+.mb4 { margin-bottom: 4em; }
+.mb5 { margin-bottom: 5em; }
+.mb6 { margin-bottom: 6em; }
+.mb7 { margin-bottom: 7em; }
+.mb8 { margin-bottom: 8em; }
+.mb9 { margin-bottom: 9em; }
+.mb10 { margin-bottom: 10em; }
+.mb11 { margin-bottom: 11em; }
+.mb12 { margin-bottom: 12em; }
+.mb13 { margin-bottom: 13em; }
+.mb14 { margin-bottom: 14em; }
+.mb15 { margin-bottom: 15em; }
+.mb16 { margin-bottom: 16em; }
+.mb17 { margin-bottom: 17em; }
+.mb18 { margin-bottom: 18em; }
+.mb19 { margin-bottom: 19em; }
+.mb20 { margin-bottom: 20em; }
 
 .no_pad { padding: 0; }
 
@@ -189,13 +215,9 @@ a.navbar-brand {
   padding: 5em 0;
 }
 
-.hero_bg {
+.content_bg {
   background: rgba(255, 255, 255, .9);
   padding: 1em;
-}
-
-.year_bg {
-  
 }
 
 .year {
@@ -206,10 +228,6 @@ a.navbar-brand {
 .lazy {
   background-image: url('/images/white.gif');
   background-size: cover;
-}
-
-#churches {
-  background-color: $mh_gold;
 }
 
 #all_about_jesus {
@@ -224,7 +242,7 @@ a.navbar-brand {
 
   background: $mh_gold;
   color: $mh_white;
-  padding: 3em 0;
+  padding: 8em 0;
 
   p {
     color: $mh_white;
