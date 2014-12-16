@@ -47,6 +47,7 @@ h3 {
   font-family: $sans;
   font-weight: bold;
   text-transform: uppercase;
+  margin-bottom: 1em;
 }
 
 p {
@@ -118,7 +119,7 @@ aside {
   color: $mh_white;
 }
 
-
+.mt0 { margin-top: 0;   }
 .mt1 { margin-top: 1em; }
 .mt2 { margin-top: 2em; }
 .mt3 { margin-top: 3em; }
@@ -140,6 +141,7 @@ aside {
 .mt19 { margin-top: 19em; }
 .mt20 { margin-top: 20em; }
 
+.mb0 { margin-bottom: 0;   }
 .mb1 { margin-bottom: 1em; }
 .mb2 { margin-bottom: 2em; }
 .mb3 { margin-bottom: 3em; }
@@ -171,6 +173,14 @@ aside {
 .navbar-default {
   background: rgba(255, 255, 255, .90);
   border: none;
+}
+
+.nav.navbar-nav {
+  li {
+    a {
+      font-family: $serif;
+    }
+  }
 }
 
 .brand_layer {
@@ -277,4 +287,29 @@ a.navbar-brand {
     border-bottom: none;
   }
   
+}
+
+
+/////////////////////////////////////
+///          RESPONSIVE           ///
+/////////////////////////////////////
+
+
+@media screen and (max-width: 768px) {
+  body {
+    padding-top: 4.8em;
+  }
+  
+  .year {
+    padding-top: 4.8em;
+    margin-bottom: 2em;
+  }
+  
+  blockquote.inline {
+    font-size: 1.2em;
+  }
+  
+  .content_bg {
+    margin: 0 1em;
+  }
 }
