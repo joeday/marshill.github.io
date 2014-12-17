@@ -85,8 +85,8 @@ blockquote {
   border-left: 0;
   padding: 1em 0;
   color: $mh_gold;
-  margin-left: 3em;
-  margin-right: 3em;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
   line-height: 1.3em;
 }
 
@@ -95,7 +95,7 @@ blockquote.white {
 }
 
 blockquote.inline {
-  margin: 2em 4em;
+  margin: 2em 1em;
   font-size: 1.6em;
 }
 
@@ -386,5 +386,17 @@ a.navbar-brand {
     li.tl2006 {
       margin: 0;
     }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  blockquote {
+    margin-left: 3em;
+    margin-right: 3em;
+  }
+  
+  blockquote.inline {
+    margin: 2em 4em;
+    font-size: 1.6em;
   }
 }
