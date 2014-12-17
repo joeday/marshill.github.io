@@ -175,11 +175,59 @@ aside {
   border: none;
 }
 
+.navbar-header {
+  width: 100%;
+  margin-top: .9em;
+}
+
+.timeline {
+  width: 100%;
+  height: 1px;
+  background: $mh_black;
+}
+
 .nav.navbar-nav {
+  text-align: center;
+  width: 100%;
+  margin-top: -.9em;
   li {
+    text-align: center;
+    float: none;
+    display: inline-block;
     a {
       font-family: $serif;
+      color: $mh_black;
+      font-size: .8em;
+      display: block;
     }
+    a:hover {
+      background: none;
+      color: $mh_gold;
+      .dot {
+        background: $mh_gold;
+      }
+    }
+  }
+  li.active {
+    a {
+      background: none;
+      color: $mh_gold;
+      .dot {
+        background: $mh_gold;
+      }
+    }
+    a:hover {
+      background: none;
+      color: $mh_gold;
+    }
+  }
+  .dot {
+    height: 6px;
+    width: 6px;
+    border-radius: 6px;
+    background: $mh_black;
+    border: 1px solid $mh_white;
+    margin: 0 auto .5em auto;
   }
 }
 
