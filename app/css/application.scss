@@ -22,7 +22,7 @@ $base_font_size: 20px;
 
 
 body {
-	padding-top: 7.4em;
+	padding-top: 6.8em;
   font-size: $base_font_size;
 }
 
@@ -177,7 +177,7 @@ aside {
 
 .navbar-header {
   width: 100%;
-  margin-top: .9em;
+  margin-bottom: .9em;
 }
 
 .timeline {
@@ -187,9 +187,8 @@ aside {
 }
 
 .nav.navbar-nav {
-  text-align: center;
   width: 100%;
-  margin-top: -.9em;
+  margin-top: -3px;
   li {
     text-align: center;
     float: none;
@@ -199,6 +198,7 @@ aside {
       color: $mh_black;
       font-size: .8em;
       display: block;
+      padding: 0 .625em .625em .625em;
     }
     a:hover {
       background: none;
@@ -229,10 +229,22 @@ aside {
     border: 1px solid $mh_white;
     margin: 0 auto .5em auto;
   }
+  
+  // timeline margin spacing - 1yr = 29px, 29px / 940px = 3%
+
+  li.tl1996 {
+    margin-right: 12%;
+  }
+  li.tl2001, li.tl2009 {
+    margin-right: 3%;
+  }
+  li.tl2003, li.tl2006 {
+    margin-right: 6%;
+  }
+  
 }
 
 .brand_layer {
-  padding-top: 2em;
   width: 100%;
 }
 
@@ -279,7 +291,7 @@ a.navbar-brand {
 }
 
 .year {
-  padding-top: 7.4em;
+  padding-top: 6.8em;
   margin-bottom: 4em;
 }
 
@@ -359,5 +371,20 @@ a.navbar-brand {
   
   .content_bg {
     margin: 0 1em;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  .nav.navbar-nav {
+    
+    text-align: center;
+    
+    li.tl1996, 
+    li.tl2001, 
+    li.tl2009, 
+    li.tl2003, 
+    li.tl2006 {
+      margin: 0;
+    }
   }
 }
