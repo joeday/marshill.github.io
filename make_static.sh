@@ -8,5 +8,8 @@ echo "marshill.red" > CNAME
 git add --all
 git stash
 git checkout master
+git pull
 git rm -r *
 git stash apply
+git commit -au -m "Updated `date`"
+git push
