@@ -377,11 +377,23 @@ a.navbar-brand {
 
 @media screen and (max-width: 768px) {
   body {
-    padding-top: 4.8em;
+    padding-top: 3.6em;
+  }
+  
+  h1 {
+    font-size: 5em;
+  }
+  
+  h2 {
+    font-size: 5em;
+  }
+  
+  h3 {
+    font-size: 1.2em;
   }
   
   .year {
-    padding-top: 4.8em;
+    padding-top: 3.6em;
     margin-bottom: 2em;
   }
   
@@ -390,12 +402,17 @@ a.navbar-brand {
   }
   
   .content_bg {
-    margin: 0 1em;
+    margin: 0 .1em;
   }
   
   .container>.navbar-header {
     margin-left: 0;
     margin-right: 0;
+    margin-bottom: 0;
+  }
+  
+  .navbar {
+    margin-bottom: 0;
   }
   
   a.navbar-brand {
