@@ -265,8 +265,6 @@ aside {
   }
 }
 
-
-
 a.navbar-brand {
   height: auto;
   img {
@@ -395,9 +393,40 @@ a.navbar-brand {
     margin: 0 1em;
   }
   
+  .container>.navbar-header {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
   a.navbar-brand {
+    padding-left: 0;
     img {
       height: 42px;
+    }
+  }
+  
+  .dot,
+  .timeline {
+    display: none;
+  }
+  
+  .nav.navbar-nav {
+    margin: 0;
+    text-align: center;
+    
+    li {
+      display: block;
+      a {
+        font-size: 1.5em;
+      }
+    }
+    
+    li.tl1996, 
+    li.tl2001, 
+    li.tl2009, 
+    li.tl2003, 
+    li.tl2006 {
+      margin: 0;
     }
   }
   
