@@ -343,10 +343,10 @@ a.navbar-brand {
   #churches h3 {
     color: #333333;
     margin-bottom: 1.6em; }
-  #churches dt {
+  #churches .mh_church {
     font-size: .6em;
     font-weight: normal; }
-  #churches dd {
+  #churches .new_church {
     padding-bottom: .7em;
     border-bottom: 1px solid #ffffff;
     margin-bottom: 1em;
