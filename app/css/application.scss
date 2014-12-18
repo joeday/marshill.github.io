@@ -32,6 +32,7 @@ h1 {
   font-weight: bold;
   color: $mh_gold;
   text-align: center;
+  text-transform: uppercase;
 }
 
 h2 {
@@ -117,6 +118,14 @@ aside {
 
 .white {
   color: $mh_white;
+}
+
+.cover_bg {
+  background-size: cover;
+}
+
+.contain_bg {
+  background-size: contain;
 }
 
 .mt0 { margin-top: 0;   }
@@ -237,12 +246,13 @@ aside {
   width: 100%;
 }
 
-.church_link {
+.church_link,
+.nav_link {
   float: right;
   text-transform: uppercase;
   text-align: right;
   font-size: .5em;
-  padding: 15px;
+  padding: 15px 0 15px 15px;
   a, span {
     display: inline-block;
   }
@@ -253,16 +263,39 @@ aside {
       color: $mh_gold;
     }
   }
-  .glyphicon {
-    font-size: 2.6em;
-    margin-left: .5em;
-    color: $mh_gold;
+}
+
+
+
+a.navbar-brand {
+  height: auto;
+  img {
+    height: 24px;
   }
 }
 
-a.navbar-brand {
+.icon-churches {
+  margin: 0 0 0 10px;
+  float: right;
   img {
-    height: 24px;
+    height: 28px;
+    width: 28px;
+  }
+}
+
+.icon-directory {
+  margin-right: 10px;
+  float: left;
+  img{
+    height: 10px;
+  }
+}
+
+.icon-timeline {
+  margin-right: 10px;
+  float: left;
+  img{
+    height: 10px;
   }
 }
 
@@ -286,7 +319,7 @@ a.navbar-brand {
 
 .lazy {
   background-image: url('/images/white.gif');
-  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 #all_about_jesus {
@@ -361,9 +394,17 @@ a.navbar-brand {
   .content_bg {
     margin: 0 1em;
   }
+  
+  a.navbar-brand {
+    img {
+      height: 42px;
+    }
+  }
+  
 }
 
 @media screen and (min-width: 769px) and (max-width: 992px) {
+  
   .nav.navbar-nav {
     
     text-align: center;

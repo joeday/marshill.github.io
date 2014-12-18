@@ -10,7 +10,7 @@ $("#mh_logo").click(function() {
 });
 
 // FIX THIS AFTER NAV IS FULLY BUILT
-
+//
 // $('a').click(function(){
 //   $('html, body').animate({
 //     scrollTop: $( $.attr(this, 'href') ).offset().top

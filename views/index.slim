@@ -2,14 +2,26 @@ nav.navbar.navbar-default.navbar-fixed-top role="navigation"
   .container
     .navbar-header.brand_layer
       a#mh_logo.navbar-brand href="#"
-        == img '/images/mh_logo.svg'
-      div.church_link
+        img.hidden-xs src='/images/mh_logo.svg'
+        img.visible-xs src='/images/mh_m_logo.svg'
+      .church_link.hidden-xs
         a href="#churches"
           span
             | Church 
             br
             | Directory
-          span.glyphicon.glyphicon-download aria-hidden="true" href="#churches"
+          span.icon-churches href="#churches"
+            img src="/images/down.svg"
+      .church_link.mt2.visible-xs
+        a href="#churches" 
+          span.icon-directory
+            img src="/images/directory.svg"
+          | Directory
+      .nav_link.mt2.visible-xs
+        a href="#"
+          span.icon-timeline
+            img src="/images/timeline.svg"
+          | Timeline
           
   .container.hidden-xs
     .navbar-header
@@ -43,7 +55,7 @@ nav.navbar.navbar-default.navbar-fixed-top role="navigation"
       == slim :_2001
 
   .year#ad2003
-    .row.lazy data-original='/images/ballard.jpg'
+    .row.lazy.contain_bg data-original='/images/ballard.jpg'
       == slim :_2003
 
   .year#ad2006
@@ -67,7 +79,7 @@ nav.navbar.navbar-default.navbar-fixed-top role="navigation"
       == slim :_2012
 
   .year#ad2013
-    .row.lazy data-original='/images/conference.jpg'
+    .row.lazy.cover_bg data-original='/images/conference.jpg'
       == slim :_2013
     .row
       blockquote.inline.visible-sm.visible-xs
@@ -87,7 +99,7 @@ nav.navbar.navbar-default.navbar-fixed-top role="navigation"
 
   .row#all_about_jesus.lazy data-original='/images/worship.jpg'
     h1
-      | &ldquo;It&rsquo;s still
+      | &ldquo;It&rsquo;s 
       br
       | all about
       br Jesus!&rdquo;
