@@ -17,13 +17,37 @@ $(function() {
 
   });
   
+  $(window).bind ('hashchange', function () {
+    handleSignInHash();
+  });
+
 });
 
 
+function handleSignInHash() {
+  var hash;
+  hash = window.location.hash.replace('#', '');
+  if (/^.*#$/.test(window.location.href)) {
+    window.history.replaceState("", "", window.location.href.replace('#', ''));
+  }
+}
 
 $("#mh_logo").click(function() {
   $("html, body").animate({ scrollTop: "0" }, 300, "swing");
+  handleSignInHash();
 });
+
+$(".year_nav").click(function() {
+  if (window.matchMedia("(max-width: 768px)").matches) { 
+    $("#tNav").removeClass("visible-xs");
+    $("#tNav").addClass("hidden-xs");
+  }
+})
+
+
+
+
+
 
 // FIX THIS AFTER NAV IS FULLY BUILT
 //
