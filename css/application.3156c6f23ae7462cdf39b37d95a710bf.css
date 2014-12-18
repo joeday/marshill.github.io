@@ -9,7 +9,8 @@ h1 {
   font-family: "futura", "futura-pt", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
   color: #ae956b;
-  text-align: center; }
+  text-align: center;
+  text-transform: uppercase; }
 
 h2 {
   font-size: 8em;
@@ -74,6 +75,12 @@ blockquote.inline {
 
 .white {
   color: #ffffff; }
+
+.cover_bg {
+  background-size: cover; }
+
+.contain_bg {
+  background-size: contain; }
 
 .mt0 {
   margin-top: 0; }
@@ -255,26 +262,48 @@ blockquote.inline {
 .brand_layer {
   width: 100%; }
 
-.church_link {
+.church_link,
+.nav_link {
   float: right;
   text-transform: uppercase;
   text-align: right;
   font-size: .5em;
-  padding: 15px; }
-  .church_link a, .church_link span {
+  padding: 15px 0 15px 15px; }
+  .church_link a, .church_link span,
+  .nav_link a,
+  .nav_link span {
     display: inline-block; }
-  .church_link a {
+  .church_link a,
+  .nav_link a {
     text-align: left;
     color: #222222; }
-    .church_link a :hover {
+    .church_link a :hover,
+    .nav_link a :hover {
       color: #ae956b; }
-  .church_link .glyphicon {
-    font-size: 2.6em;
-    margin-left: .5em;
-    color: #ae956b; }
 
-a.navbar-brand img {
-  height: 24px; }
+a.navbar-brand {
+  height: auto; }
+  a.navbar-brand img {
+    height: 24px; }
+
+.icon-churches {
+  margin: 0 0 0 10px;
+  float: right; }
+  .icon-churches img {
+    height: 28px;
+    width: 28px; }
+
+.icon-directory {
+  margin-right: 10px;
+  float: left; }
+  .icon-directory img {
+    height: 10px; }
+
+.icon-timeline {
+  margin-right: 10px;
+  float: left; }
+  .icon-timeline img {
+    height: 10px; }
 
 .hero {
   background: #333333;
@@ -293,7 +322,7 @@ a.navbar-brand img {
 
 .lazy {
   background-image: url("/images/white.gif");
-  background-size: cover; }
+  background-repeat: no-repeat; }
 
 #all_about_jesus {
   background-image: url("/images/white.gif");
@@ -338,7 +367,34 @@ a.navbar-brand img {
     font-size: 1.2em; }
 
   .content_bg {
-    margin: 0 1em; } }
+    margin: 0 1em; }
+
+  .container > .navbar-header {
+    margin-left: 0;
+    margin-right: 0; }
+
+  a.navbar-brand {
+    padding-left: 0; }
+    a.navbar-brand img {
+      height: 42px; }
+
+  .dot,
+  .timeline {
+    display: none; }
+
+  .nav.navbar-nav {
+    margin: 0;
+    text-align: center; }
+    .nav.navbar-nav li {
+      display: block; }
+      .nav.navbar-nav li a {
+        font-size: 1.5em; }
+    .nav.navbar-nav li.tl1996,
+    .nav.navbar-nav li.tl2001,
+    .nav.navbar-nav li.tl2009,
+    .nav.navbar-nav li.tl2003,
+    .nav.navbar-nav li.tl2006 {
+      margin: 0; } }
 @media screen and (min-width: 769px) and (max-width: 992px) {
   .nav.navbar-nav {
     text-align: center; }

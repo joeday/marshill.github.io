@@ -9,7 +9,7 @@
       try{Typekit.load();}catch(e){}
     </script>
     <link rel='stylesheet' href='//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css' />
-    <link rel='stylesheet' href='/css/application.0927f35aa691feeed83eb5279f3721aa.css' /><link href="/favicons/favicon.ico" rel="shortcut icon" />
+    <link rel='stylesheet' href='/css/application.3156c6f23ae7462cdf39b37d95a710bf.css' /><link href="/favicons/favicon.ico" rel="shortcut icon" />
     <link href="/favicons/apple-touch-icon-57x57.png" rel="apple-touch-icon" sizes="57x57" />
     <link href="/favicons/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114" />
     <link href="/favicons/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72" />
@@ -32,13 +32,19 @@
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header brand_layer">
-          <a class="navbar-brand" href="#" id="mh_logo"><img src='/images/mh_logo.svg' /></a>
-          <div class="church_link">
-            <a href="#churches"><span>Church <br />Directory</span><span aria-hidden="true" class="glyphicon glyphicon-download" href="#churches"></span></a>
+          <a class="navbar-brand" href="#" id="mh_logo"><img class="hidden-xs" src="/images/mh_logo.svg" /><img class="visible-xs" src="/images/mh_m_logo.svg" /></a>
+          <div class="church_link hidden-xs">
+            <a href="#churches"><span>Church <br />Directory</span><span class="icon-churches" href="#churches"><img src="/images/down.svg" /></span></a>
+          </div>
+          <div class="church_link mt2 visible-xs">
+            <a href="#churches"><span class="icon-directory"><img src="/images/directory.svg" /></span>Directory</a>
+          </div>
+          <div class="nav_link mt2 visible-xs">
+            <a class="tLink" href="#"><span class="icon-timeline"><img src="/images/timeline.svg" /></span>Timeline</a>
           </div>
         </div>
       </div>
-      <div class="container hidden-xs">
+      <div class="container hidden-xs" id="tNav">
         <div class="navbar-header">
           <div class="timeline"></div>
           <ul class="years nav navbar-nav" role="tablist">
@@ -192,7 +198,7 @@
         </div>
       </div>
       <div class="year" id="ad2003">
-        <div class="row lazy" data-original="/images/ballard.jpg">
+        <div class="row lazy contain_bg" data-original="/images/ballard.jpg">
           <div class="col-sm-3">
             <blockquote class="mt6 hidden-sm hidden-xs">&ldquo;Jesus continued to grow his church&rdquo;</blockquote>
           </div>
@@ -347,7 +353,7 @@
         </div>
       </div>
       <div class="year" id="ad2013">
-        <div class="row lazy" data-original="/images/conference.jpg">
+        <div class="row lazy cover_bg" data-original="/images/conference.jpg">
           <div class="col-sm-6 col-sm-offset-3">
             <div class="row content_bg">
               <div class="col-sm-12">
@@ -415,10 +421,10 @@
               2015
             </h2>
             <h3 class="gold">
-              Local Churches, Local Mission&hellip; 12 Newly Independent Churches
+              Local Churches, Local Mission&hellip; 11 Newly Independent Churches
             </h3>
             <p>
-              With her final breath, Mars Hill gave birth to 12 newly independent churches where, by God&rsquo;s grace, the gospel will continue to be preached, his name will be glorified, and thousands will be saved by Jesus.
+              With her final breath, Mars Hill gave birth to 11 newly independent churches where, by God&rsquo;s grace, the gospel will continue to be preached, his name will be glorified, and thousands will be saved by Jesus.
             </p>
           </div>
         </div>
@@ -431,14 +437,14 @@
           <div class="row">
             <div class="col-sm-6">
               <dl>
-                <a href="#">
+                <a href="http://foundationchurch.org" target="_blank">
                   <dt>
                     Mars Hill Everett
                   </dt>
                   <dd>
                     Foundation Church
                   </dd>
-                </a><a href="#">
+                </a><a href="http://soundcitybiblechurch.com" target="_blank">
                   <dt>
                     Mars Hill Shoreline
                   </dt>
@@ -450,16 +456,16 @@
                     Mars Hill Ballard
                   </dt>
                   <dd>
-                    TBA
+                    Cross <em>&amp; </em>Crown
                   </dd>
                 </a><a href="#">
                   <dt>
                     Mars Hill Bellevue
                   </dt>
                   <dd>
-                    TBA
+                    Doxa
                   </dd>
-                </a><a href="#">
+                </a><a href="http://trinityws.com" target="_blank">
                   <dt>
                     Mars Hill West Seattle
                   </dt>
@@ -485,7 +491,7 @@
                   <dd>
                     Resurrection Church
                   </dd>
-                </a><a href="#">
+                </a><a href="http://harborolympia.com" target="_blank">
                   <dt>
                     Mars Hill Olympia
                   </dt>
@@ -499,21 +505,14 @@
                   <dd>
                     Redemption Spokane
                   </dd>
-                </a><a href="#">
+                </a><a href="http://redeemerpdx.com" target="_blank">
                   <dt>
                     Mars Hill Portland
                   </dt>
                   <dd>
                     Redeemer Church
                   </dd>
-                </a><a href="#">
-                  <dt>
-                    Mars Hill Phoenix
-                  </dt>
-                  <dd>
-                    Phoenix Bible Church
-                  </dd>
-                </a><a href="#">
+                </a><a href="http://northchurchabq.com" target="_blank">
                   <dt>
                     Mars Hill Albuquerque
                   </dt>
@@ -528,7 +527,7 @@
       </div>
       <div class="row lazy" data-original="/images/worship.jpg" id="all_about_jesus">
         <h1>
-          &ldquo;It&rsquo;s still<br />all about<br>Jesus!&rdquo;</br>
+          &ldquo;It&rsquo;s <br />all about<br>Jesus!&rdquo;</br>
         </h1>
         <div class="col-sm-12">
           <p class="white">
@@ -539,6 +538,6 @@
     </div><script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js'></script>
     <script src='//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js'></script>
     <script src='//cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.min.js'></script>
-    <script src='/js/application.9e267210816f724b2847b0e7e6f7ac14.js'></script>
+    <script src='/js/application.3a35667cd9cebb61667f1a6b19a3db73.js'></script>
   </body>
 </html>
