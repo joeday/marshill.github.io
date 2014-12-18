@@ -2,8 +2,8 @@ nav.navbar.navbar-default.navbar-fixed-top role="navigation"
   .container
     .navbar-header.brand_layer
       a#mh_logo.navbar-brand href="#"
-        img.hidden-xs src='/images/mh_logo.svg'
-        img.visible-xs src='/images/mh_m_logo.svg'
+        img.hidden-xs src='/images/mh_logo.svg' alt="Mars Hill Church"
+        img.visible-xs src='/images/mh_m_logo.svg' alt="Mars Hill Church"
       .church_link.hidden-xs
         a href="#churches"
           span
@@ -11,16 +11,16 @@ nav.navbar.navbar-default.navbar-fixed-top role="navigation"
             br
             | Directory
           span.icon-churches href="#churches"
-            img src="/images/down.svg"
+            img src="/images/down.svg" alt="Down Arrow"
       .church_link.mt2.visible-xs
         a href="#churches" 
           span.icon-directory
-            img src="/images/directory.svg"
+            img src="/images/directory.svg" alt="Church Directory"
           | Directory
       .nav_link.mt2.visible-xs
         a.tLink href="#"
           span.icon-timeline
-            img src="/images/timeline.svg"
+            img src="/images/timeline.svg" alt="Timeline"
           | Timeline
           
   .container.hidden-xs#tNav
@@ -48,14 +48,14 @@ nav.navbar.navbar-default.navbar-fixed-top role="navigation"
 
   .row
     .col-sm-9.col-sm-offset-3
-      img.img-responsive.lazy data-original='/images/free_building.jpg' 
+      img.img-responsive.lazy data-original='/images/free_building.jpg' src='/images/white.gif' alt="Free Building"
 
   .year#ad2001
     .row
       == slim :_2001
 
   .year#ad2003
-    .row.lazy.contain_bg data-original='/images/ballard.jpg'
+    .row.lazy.contain_bg data-original='/images/ballard.jpg' src='/images/white.gif' alt="Ballard"
       == slim :_2003
 
   .year#ad2006
@@ -68,7 +68,7 @@ nav.navbar.navbar-default.navbar-fixed-top role="navigation"
 
   .row
     .col-sm-9.no_pad
-      img.img-responsive.lazy data-original='/images/driscoll_easter.jpg' 
+      img.img-responsive.lazy data-original='/images/driscoll_easter.jpg' src='/images/white.gif' alt="Easter Sermon"
 
   .year#ad2011
     .row
@@ -79,7 +79,7 @@ nav.navbar.navbar-default.navbar-fixed-top role="navigation"
       == slim :_2012
 
   .year#ad2013
-    .row.lazy.cover_bg data-original='/images/conference.jpg'
+    .row.lazy.cover_bg data-original='/images/conference.jpg' src='/images/white.gif' alt="Resurgence Conference"
       == slim :_2013
     .row
       blockquote.inline.visible-sm.visible-xs
@@ -97,11 +97,12 @@ nav.navbar.navbar-default.navbar-fixed-top role="navigation"
   .row#churches
     == slim :_churches
 
-  .row#all_about_jesus.lazy data-original='/images/worship.jpg'
+  .row#all_about_jesus.lazy data-original='/images/worship.jpg' src='/images/white.gif' alt="Worship"
     h1
       | &ldquo;It&rsquo;s 
       br
       | all about
-      br Jesus!&rdquo;
+      br
+      | Jesus!&rdquo;
     .col-sm-12
       p.white &copy; 2015 Mars Hill Church. All Rights Reserved.
