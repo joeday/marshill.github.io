@@ -3,7 +3,7 @@
 ///             MIXINS            ///
 /////////////////////////////////////
 
-$sans:        "futura", "futura-pt", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$sans:        "futura-pt", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 $serif:       "kepler-std", Georgia, "Times New Roman", Times, serif !default;
 $mh_black: #222222;
 $mh_offblack: #333333;
@@ -351,8 +351,9 @@ a.navbar-brand {
   }
   
   .mh_church {
-    font-size: .6em;
-    font-weight: normal;
+    font-size: .7em;
+    font-weight: lighter;
+    font-family: $sans;
   }
   
   .new_church {
@@ -360,7 +361,8 @@ a.navbar-brand {
     border-bottom: 1px solid $mh_white;
     margin-bottom: 1em;
     font-family: $serif;
-    font-size: 1em;
+    font-size: 1.1em;
+    line-height: 1em;
   }
   
   .last {
