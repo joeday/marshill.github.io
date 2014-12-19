@@ -6,7 +6,7 @@ body {
 
 h1 {
   font-size: 5em;
-  font-family: "futura", "futura-pt", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "futura-pt", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
   color: #ae956b;
   text-align: center;
@@ -21,7 +21,7 @@ h2 {
 
 h3 {
   font-size: 1.6em;
-  font-family: "futura", "futura-pt", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "futura-pt", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 1em; }
@@ -344,14 +344,16 @@ a.navbar-brand {
     color: #333333;
     margin-bottom: 1.6em; }
   #churches .mh_church {
-    font-size: .6em;
-    font-weight: normal; }
+    font-size: .7em;
+    font-weight: lighter;
+    font-family: "futura-pt", "Helvetica Neue", Helvetica, Arial, sans-serif; }
   #churches .new_church {
     padding-bottom: .7em;
     border-bottom: 1px solid #ffffff;
     margin-bottom: 1em;
     font-family: "kepler-std", Georgia, "Times New Roman", Times, serif;
-    font-size: 1em; }
+    font-size: 1.1em;
+    line-height: 1em; }
   #churches .last {
     border-bottom: none; }
 
