@@ -14,7 +14,7 @@ h1 {
 
 h2 {
   font-size: 8em;
-  font-family: "kepler-std", Georgia, "Times New Roman", Times, serif;
+  font-family: "kepler-std", "Times New Roman", Times, serif;
   font-weight: normal;
   color: #ae956b;
   margin: 0; }
@@ -34,7 +34,7 @@ p {
 
 em {
   font-style: italic;
-  font-family: "kepler-std", Georgia, "Times New Roman", Times, serif; }
+  font-family: "kepler-std", "Times New Roman", Times, serif; }
 
 hr {
   color: #222222; }
@@ -48,7 +48,7 @@ a {
 
 blockquote {
   font-size: 1.1em;
-  font-family: "kepler-std", Georgia, "Times New Roman", Times, serif;
+  font-family: "kepler-std", "Times New Roman", Times, serif;
   font-style: italic;
   text-align: center;
   border-top: 1px solid #222222;
@@ -233,7 +233,7 @@ blockquote.inline {
     float: none;
     display: inline-block; }
     .nav.navbar-nav li a {
-      font-family: "kepler-std", Georgia, "Times New Roman", Times, serif;
+      font-family: "kepler-std", "Times New Roman", Times, serif;
       color: #222222;
       font-size: .8em;
       display: block;
@@ -351,7 +351,7 @@ a.navbar-brand {
     padding-bottom: .7em;
     border-bottom: 1px solid #ffffff;
     margin-bottom: 1em;
-    font-family: "kepler-std", Georgia, "Times New Roman", Times, serif;
+    font-family: "kepler-std", "Times New Roman", Times, serif;
     font-size: 1.1em;
     line-height: 1em; }
   #churches .last {
