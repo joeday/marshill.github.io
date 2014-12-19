@@ -195,6 +195,15 @@ aside {
   background: $mh_black;
 }
 
+.navbar-default {
+  .navbar-nav>.active>a, 
+  .navbar-nav>.active>a:hover,
+  .navbar-nav>.active>a:focus {
+      background: none;
+      color: $mh_gold;
+  }
+}
+
 .nav.navbar-nav {
   width: 100%;
   margin-top: -3px;
@@ -219,6 +228,7 @@ aside {
     }
   }
   li.active {
+    background: none;
     a {
       background: none;
       color: $mh_gold;
