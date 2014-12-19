@@ -37,8 +37,8 @@ $("#mh_logo").click(function() {
   handleSignInHash();
 });
 
-$(".year_nav").click(function() {
-  if (window.matchMedia("(max-width: 768px)").matches) { 
+$(".year_nav").click(function(e) {
+  if (window.matchMedia("(max-width: 767px)").matches) { 
     $("#tNav").removeClass("visible-xs");
     $("#tNav").addClass("hidden-xs");
   }
