@@ -128,6 +128,10 @@ aside {
   background-size: contain;
 }
 
+.relative {
+  position: relative;
+}
+
 .mt0 { margin-top: 0;   }
 .mt1 { margin-top: 1em; }
 .mt2 { margin-top: 2em; }
@@ -381,6 +385,34 @@ a.navbar-brand {
   
 }
 
+.top_link {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  text-transform: uppercase;
+  text-align: right;
+  font-size: .5em;
+  padding: 15px;
+  background: rgba(255,255,255, .9);
+  a, span {
+    display: inline-block;
+  }
+  a {
+    text-align: left;
+    color: $mh_black;
+    & :hover {
+      color: $mh_gold;
+    }
+  }
+  span {
+    padding-top: 6%;
+  }
+  img {
+    transform: rotate(180deg);
+  }
+}
+
 
 /////////////////////////////////////
 ///          RESPONSIVE           ///
@@ -460,9 +492,17 @@ a.navbar-brand {
     }
   }
   
+  .top_link {
+    padding: 6px;
+  }
+  
 }
 
 @media screen and (max-height: 481px) {
+  
+  h1 {
+    font-size: 3em;
+  }
   .nav.navbar-nav {
     li {
       a {
