@@ -21,6 +21,14 @@ $(function() {
     handleHash();
   });
 
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 100) {
+      $(".top_link").fadeIn();
+    } else {
+      $(".top_link").fadeOut();
+    }
+  });
+  
 });
 
 function handleHash() {
@@ -32,6 +40,12 @@ function handleHash() {
 }
 
 $("#mh_logo").click(function() {
+  $("html, body").animate({ scrollTop: "0" }, 300, "swing");
+  handleHash();
+});
+
+$("#backToTop").click(function(e) {
+  e.preventDefault();
   $("html, body").animate({ scrollTop: "0" }, 300, "swing");
   handleHash();
 });
