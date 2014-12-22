@@ -6,7 +6,7 @@ $(function() {
   
   $(".tLink").click(function(e) {
     e.preventDefault();
-    
+
     if ($("#tNav").hasClass("hidden-xs")) {
       $("#tNav").removeClass("hidden-xs");
       $("#tNav").addClass("visible-xs");
@@ -36,7 +36,8 @@ $("#mh_logo").click(function() {
   handleHash();
 });
 
-$(".year_nav").click(function(e) {
+$(".year_nav").click(function() {
+  console.log("hi again")
   if (window.matchMedia("(max-width: 767px)").matches) { 
     $("#tNav").removeClass("visible-xs");
     $("#tNav").addClass("hidden-xs");
@@ -53,7 +54,7 @@ $(function() {
         if (target.length) {
           $('html,body').animate({
             scrollTop: target.offset().top
-        }, 1000);
+        }, 600);
         return false;
       }
     }
