@@ -18,12 +18,12 @@ $(function() {
   });
   
   $(window).bind ('hashchange', function () {
-    handleSignInHash();
+    handleHash();
   });
 
 });
 
-function handleSignInHash() {
+function handleHash() {
   var hash;
   hash = window.location.hash.replace('#', '');
   if (/^.*#$/.test(window.location.href)) {
@@ -33,7 +33,7 @@ function handleSignInHash() {
 
 $("#mh_logo").click(function() {
   $("html, body").animate({ scrollTop: "0" }, 300, "swing");
-  handleSignInHash();
+  handleHash();
 });
 
 $(".year_nav").click(function(e) {
