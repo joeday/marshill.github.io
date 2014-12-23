@@ -7,10 +7,11 @@ body {
 h1 {
   font-size: 5em;
   font-family: "futura-pt", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: bold;
+  font-weight: normal;
   color: #ae956b;
   text-align: center;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  letter-spacing: -5px; }
 
 h2 {
   font-size: 8em;
