@@ -409,6 +409,8 @@ a.navbar-brand {
     padding-top: 6%;
   }
   img {
+    -ms-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
     transform: rotate(180deg);
   }
 }
@@ -425,7 +427,7 @@ a.navbar-brand {
   }
   
   h1 {
-    font-size: 5em;
+    font-size: 3em;
   }
   
   h2 {
@@ -479,7 +481,6 @@ a.navbar-brand {
       display: block;
       a {
         font-size: 1.5em;
-//        padding: .3em 0;
       }
     }
     
@@ -500,9 +501,6 @@ a.navbar-brand {
 
 @media screen and (max-height: 481px) {
   
-  h1 {
-    font-size: 3em;
-  }
   .nav.navbar-nav {
     li {
       a {
