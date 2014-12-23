@@ -29,10 +29,11 @@ body {
 h1 {
   font-size: 5em;
   font-family: $sans;
-  font-weight: bold;
+  font-weight: normal;
   color: $mh_gold;
   text-align: center;
   text-transform: uppercase;
+  letter-spacing: -5px;
 }
 
 h2 {
