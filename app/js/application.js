@@ -47,6 +47,11 @@ function handleHash() {
   }
 }
 
+$(".close_alert").click(function(e) {
+  e.preventDefault();
+  $(".app_alert").fadeOut();
+})
+
 $("#mh_logo").click(function() {
   $("html, body").animate({ scrollTop: "0" }, 300, "swing");
   handleHash();

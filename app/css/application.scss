@@ -313,15 +313,24 @@ a.navbar-brand {
 }
 
 .app_alert {
-  display: none;
+//  display: none;
   font-size: .8em;
   font-style: italic;
   border: 1px solid $mh_offblack;
   background: $mh_whiteSmoke;
   padding: .5em;
   margin: 1em;
+  position: relative;
   p {
     margin: 0;
+  }
+  .glyphicon {
+    position: absolute;
+    top: -12px;
+    right: -12px;
+    font-size: 1.5em;
+    background: $mh_white;
+    border-radius: 10px;
   }
 }
 
