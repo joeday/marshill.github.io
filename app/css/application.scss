@@ -312,6 +312,19 @@ a.navbar-brand {
   }
 }
 
+.app_alert {
+  display: none;
+  font-size: .8em;
+  font-style: italic;
+  border: 1px solid $mh_offblack;
+  background: $mh_whiteSmoke;
+  padding: .5em;
+  margin: 1em;
+  p {
+    margin: 0;
+  }
+}
+
 .hero {
   background: $mh_offblack;
   background-image: url('/images/jesus_cross.jpg');
