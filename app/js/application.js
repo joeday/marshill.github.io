@@ -1,8 +1,8 @@
 $(function() {
-	$(".lazy").lazyload({
-		effect : 'fadeIn',
-		threshold : 200
-	});
+  $(".lazy").lazyload({
+    effect : 'fadeIn',
+    threshold : 200
+  });
   
   $(".tLink").click(function(e) {
     e.preventDefault();
@@ -28,8 +28,16 @@ $(function() {
       $(".top_link").fadeOut();
     }
   });
+
+  checkApp();
   
 });
+
+function checkApp() {
+  if (window.location.search.indexOf('app') > -1) {
+    $('.app_alert').show();
+  }
+}
 
 function handleHash() {
   var hash;
