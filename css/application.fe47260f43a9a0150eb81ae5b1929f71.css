@@ -324,9 +324,17 @@ a.navbar-brand {
   border: 1px solid #333333;
   background: #f9f9f9;
   padding: .5em;
-  margin: 1em; }
+  margin: 1em;
+  position: relative; }
   .app_alert p {
     margin: 0; }
+  .app_alert .glyphicon {
+    position: absolute;
+    top: -12px;
+    right: -12px;
+    font-size: 1.5em;
+    background: #ffffff;
+    border-radius: 10px; }
 
 .hero {
   background: #333333;
